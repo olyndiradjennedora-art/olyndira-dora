@@ -1,16 +1,58 @@
-# React + Vite
+# Olyndira Djenne Dora — Frontend Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Single-page portfolio built with React, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **Vite 8**
+- **Tailwind CSS v4**
+- **Framer Motion** — animations
+- **React Icons** — icônes SVG
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Ouvre [http://localhost:5173](http://localhost:5173) dans ton navigateur.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scripts
+
+| Commande | Description |
+|---|---|
+| `npm run dev` | Serveur de développement |
+| `npm run build` | Build de production |
+| `npm run preview` | Prévisualiser le build |
+
+## Personnalisation
+
+- **Photo** → remplace `src/assets/profile.jpg` par la tienne
+- **Nom & bio** → modifie `Hero.jsx` et `About.jsx`
+- **Projets** → édite le tableau `projects` dans `Projects.jsx`
+- **Liens sociaux** → mets à jour le tableau `socials` dans `Contact.jsx`
+
+## Structure
+
+```
+src/
+├── assets/profile.jpg
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Skills.jsx
+│   ├── Projects.jsx
+│   ├── Contact.jsx
+│   └── Footer.jsx
+├── App.jsx
+└── index.css
+```
+
+## Déploiement
+
+```bash
+npm run build
+# Dépose le dossier dist/ sur Vercel, Netlify ou GitHub Pages
+```
