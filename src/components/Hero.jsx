@@ -37,7 +37,7 @@ export default function Hero() {
                 {t('hero.greeting')}
                 <br />
                 <span className="font-semibold italic" style={{ color: '#D4AF37' }}>
-                  Olyndira D.
+                  Olyndira Djenne D.
                 </span>
               </h1>
             </div>

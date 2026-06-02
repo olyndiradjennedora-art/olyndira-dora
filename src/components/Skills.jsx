@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import {
   SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs,
-  SiTailwindcss, SiTypescript, SiGit, SiFigma,
-  SiNodedotjs, SiVite, SiFramer
+  SiTailwindcss, SiTypescript, SiGit, SiFigma, SiThymeleaf, SiBootstrap,
+  SiNodedotjs, SiVite, SiFramer, SiSpringboot, SiPostgresql
 } from 'react-icons/si';
 
 const skills = [
@@ -19,6 +19,10 @@ const skills = [
   { icon: SiNodedotjs,   label: 'Node.js',     color: '#339933' },
   { icon: SiVite,        label: 'Vite',        color: '#646CFF' },
   { icon: SiFramer,      label: 'Framer Motion', color: '#0055FF' },
+  { icon: SiThymeleaf,   label: 'Thymeleaf',   color: '#005C00' },
+  { icon: SiBootstrap,   label: 'Bootstrap',   color: '#563D7C' },
+  { icon: SiSpringboot,  label: 'Spring Boot', color: '#6DB33F' },
+  { icon: SiPostgresql,  label: 'PostgreSQL',  color: '#336791' },
 ];
 
 export default function Skills() {

@@ -4,7 +4,9 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   SiReact, SiNextdotjs, SiTypescript, SiTailwindcss,
-  SiJavascript, SiHtml5, SiCss, SiFigma, SiGit
+  SiJavascript, SiHtml5, SiCss, SiFigma, 
+  SiGit, SiXampp, SiThymeleaf, SiMysql,
+  SiBootstrap, SiSpringboot, SiPostgresql
 } from 'react-icons/si';
 
 const techStack = [
@@ -17,7 +19,16 @@ const techStack = [
   { icon: SiCss, label: 'CSS3', color: '#1572B6' },
   { icon: SiFigma, label: 'Figma', color: '#F24E1E' },
   { icon: SiGit, label: 'Git', color: '#F05032' },
+  { icon: SiXampp, label: 'XAMPP', color: '#FB9C2E' },
+  { icon: SiThymeleaf, label: 'Thymeleaf', color: '#005C00' },
+  { icon: SiBootstrap, label: 'Bootstrap', color: '#563D7C' },
+  { icon: SiSpringboot, label: 'Spring Boot', color: '#6DB33F' },
+  { icon: null, label: 'Java', color: '#5382a1' },
+  { icon: null, label: 'SQL', color: '#003B57' },
+  { icon: SiPostgresql, label: 'PostgreSQL', color: '#336791' },
+  { icon: SiMysql, label: 'MySQL', color: '#00758F' }
 ];
+
 
 function FadeUp({ children, delay = 0 }) {
   const ref = useRef(null);
@@ -105,7 +116,7 @@ export default function About() {
                     className="flex flex-col items-center gap-3 p-4 rounded border border-gray-700 cursor-default transition-all duration-300"
                     style={{ background: '#1F2937' }}
                   >
-                    <Icon size={28} style={{ color }} />
+                    {Icon ? <Icon size={28} style={{ color }} /> : <div className="text-white text-lg font-medium">{label}</div>}
                     <span className="text-xs text-gray-400 tracking-wide">{label}</span>
                   </motion.div>
                 ))}

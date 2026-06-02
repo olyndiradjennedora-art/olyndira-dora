@@ -21,13 +21,14 @@ const resources = {
       },
       about: {
         section: 'About Me',
-        heading: 'Crafting digital ',
-        highlight: 'experiences',
-        paragraph1: "I'm a passionate Frontend Developer with a deep love for building beautiful, accessible, and performant web applications. My journey started with a curiosity for how beautiful things on the internet came to life and it never stopped.",
-        paragraph2: 'I specialize in React and its ecosystem, always staying at the cutting edge of modern web tooling. I believe great frontend work sits at the intersection of engineering precision and design sensibility every pixel, every interaction, every millisecond matters.',
-        techHeadingStart: 'Tech I',
-        techHeadingHighlight: 'Love',
+        heading: 'Designing and Building',
+        highlight: 'web applications',
+        paragraph1: "I am an analyst-developer specializing in both frontend and backend disciplines. I design and implement web applications using React for the frontend and Java with Spring Boot for server-side development. I emphasize data collection and analysis, UML modeling, and thorough architectural design before writing code.",
+        paragraph2: "My work blends analytical rigor and practical engineering: gathering requirements, modeling systems, producing clear designs, then implementing robust, maintainable solutions. I am also expanding my skillset into mobile development.",
+        techHeadingStart: 'Technologies I',
+        techHeadingHighlight: 'Favor',
       },
+
       skills: {
         eyebrow: 'Expertise',
         title: 'Technical',
@@ -144,13 +145,14 @@ const resources = {
       },
       about: {
         section: 'À propos',
-        heading: 'Conception d’',
-        highlight: 'expériences',
-        paragraph1: 'Je suis une développeuse frontend passionnée, avec un amour profond pour la création d’applications web belles, accessibles et performantes. Mon parcours a commencé avec la curiosité de comprendre comment les belles choses sur internet prenaient vie, et cette curiosité ne s’est jamais éteinte.',
-        paragraph2: 'Je me spécialise dans React et son écosystème, en restant constamment à la pointe des outils web modernes. Je crois que le bon travail frontend se situe à l’intersection de la précision technique et de la sensibilité du design, chaque pixel, chaque interaction, chaque milliseconde compte.',
-        techHeadingStart: 'Tech que',
-        techHeadingHighlight: 'j’adore',
+        heading: 'Conception et développement',
+        highlight: "d’applications web",
+        paragraph1: "Je suis une analyste-développeuse spécialisée à la fois en frontend et backend. J'utilise React pour l'interface et Java avec Spring Boot pour les services back-end. J'attache beaucoup d'importance à la collecte et l'analyse des données, à la modélisation UML et à la conception complète avant l'implémentation.",
+        paragraph2: "Mon approche combine rigueur analytique et pratique d'ingénierie : collecte d'exigences, modélisation, conception détaillée, puis implémentation de solutions robustes et maintenables. J'apprends actuellement le développement mobile.",
+        techHeadingStart: 'Technologies que',
+        techHeadingHighlight: "j'apprécie",
       },
+
       skills: {
         eyebrow: 'Expertise',
         title: 'Compétences',
