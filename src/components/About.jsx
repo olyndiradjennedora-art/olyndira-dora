@@ -6,7 +6,7 @@ import {
   SiReact, SiNextdotjs, SiTypescript, SiTailwindcss,
   SiJavascript, SiHtml5, SiCss, SiFigma, 
   SiGit, SiXampp, SiThymeleaf, SiMysql,
-  SiBootstrap, SiSpringboot, SiPostgresql
+  SiBootstrap, SiSpringboot, SiPostgresql, SiOpenjdk, SiSqlite
 } from 'react-icons/si';
 
 const techStack = [
@@ -23,8 +23,8 @@ const techStack = [
   { icon: SiThymeleaf, label: 'Thymeleaf', color: '#005C00' },
   { icon: SiBootstrap, label: 'Bootstrap', color: '#563D7C' },
   { icon: SiSpringboot, label: 'Spring Boot', color: '#6DB33F' },
-  { icon: null, label: 'Java', color: '#5382a1' },
-  { icon: null, label: 'SQL', color: '#003B57' },
+  { icon: SiOpenjdk, label: 'Java', color: '#5382a1' },
+  { icon: SiSqlite, label: 'SQL', color: '#003B57' },
   { icon: SiPostgresql, label: 'PostgreSQL', color: '#336791' },
   { icon: SiMysql, label: 'MySQL', color: '#00758F' }
 ];
