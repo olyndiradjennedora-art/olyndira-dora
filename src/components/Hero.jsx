@@ -22,8 +22,8 @@ export default function Hero() {
           >
             {/* Eyebrow */}
             <div className="flex items-center gap-3 justify-center md:justify-start">
-              <div className="h-px w-10" style={{ background: '#D4AF37' }} />
-              <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#D4AF37' }}>
+              <div className="h-px w-10" style={{ background: '#3B82F6' }} />
+              <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#3B82F6' }}>
                 {t('hero.eyebrow')}
               </span>
             </div>
@@ -31,24 +31,28 @@ export default function Hero() {
             {/* Name */}
             <div>
               <h1
-                style={{ fontFamily: 'Cormorant Garamond, serif' }}
-                className="text-6xl md:text-7xl lg:text-8xl font-light leading-[0.95] text-black"
+                style={{ fontFamily: 'Playfair Display, serif', fontWeight: '400', fontSize: '60px' }}
+                className="text-5xl md:text-5xl lg:text-8xl leading-[0.95] text-black opacity-80"
               >
                 {t('hero.greeting')}
                 <br />
-                <span className="font-semibold italic" style={{ color: '#D4AF37' }}>
+                <span style={{ fontFamily: 'Playfair Display, serif', color: '#3B82F6' , fontSize: '58px'}}>
                   Olyndira Djenne D.
                 </span>
               </h1>
             </div>
 
             {/* Title */}
-            <p className="text-base md:text-lg font-medium tracking-[0.15em] uppercase text-gray-500">
+            <p 
+            style={{fontFamily: 'Playfair Display, serif', fontWeight: '800', fontSize: '25px'}}
+            className="text-base md:text-lg tracking-[0.15em] uppercase text-black opacity-80">
               {t('hero.title')}
             </p>
 
             {/* Tagline */}
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
+            <p 
+            style={{fontFamily: 'Inter, sans-serif', fontWeight: '400', fontSize: 18}}
+            className="text-gray-800 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
               {t('hero.tagline')}
             </p>
 
@@ -59,7 +63,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
                 className="px-8 py-3.5 text-sm font-medium tracking-widest uppercase text-white transition-all"
-                style={{ background: 'linear-gradient(135deg, #D4AF37, #8A6B18)' }}
+                style={{ background: 'linear-gradient(135deg, #3B82F6, #1D4ED8)' }}
               >
                 {t('hero.viewWork')}
               </motion.a>
@@ -68,18 +72,12 @@ export default function Hero() {
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
                 className="px-8 py-3.5 text-sm font-medium tracking-widest uppercase text-black border transition-all"
-                style={{ borderColor: '#D4AF37' }}
+                style={{ borderColor: '#3B82F6' }}
               >
                 {t('hero.getInTouch')}
               </motion.a>
             </div>
-
-            {/* Scroll indicator */}
-            <div className="hidden md:flex items-center gap-3 mt-6">
-                <div className="w-px h-12 bg-gray-300" />
-                <div className="w-1.5 h-1.5 rounded-full"/>
-              <span className="text-xs tracking-widest uppercase text-gray-400">{t('hero.scroll')}</span>
-            </div>
+            
           </motion.div>
 
           {/* Right: Image */}
@@ -93,26 +91,26 @@ export default function Hero() {
               {/* Decorative ring */}
               <div
                 className="absolute inset-0 rounded-full scale-110 opacity-20"
-                style={{ border: '1px solid #D4AF37' }}
+                style={{ border: '1px solid #3B82F6' }}
               />
               <div
                 className="absolute inset-0 rounded-full scale-[1.2] opacity-10"
-                style={{ border: '1px solid #D4AF37' }}
+                style={{ border: '1px solid #3B82F6' }}
               />
 
-              {/* Gold corner accents */}
+              {/* Blue corner accents */}
               <div
                 className="absolute -top-4 -right-4 w-12 h-12"
                 style={{
-                  borderTop: '2px solid #D4AF37',
-                  borderRight: '2px solid #D4AF37',
+                  borderTop: '2px solid #3B82F6',
+                  borderRight: '2px solid #3B82F6',
                 }}
               />
               <div
                 className="absolute -bottom-4 -left-4 w-12 h-12"
                 style={{
-                  borderBottom: '2px solid #D4AF37',
-                  borderLeft: '2px solid #D4AF37',
+                  borderBottom: '2px solid #3B82F6',
+                  borderLeft: '2px solid #3B82F6',
                 }}
               />
 
@@ -122,12 +120,12 @@ export default function Hero() {
                   alt="Profile"
                   className="w-100 h-100 md:w-96 md:h-96 lg:w-96 lg:h-96 object-cover object-top rounded-full"
                   style={{
-                    boxShadow: '0 25px 60px rgba(212,175,55,0.25), 0 8px 32px rgba(0,0,0,0.15)',
+                    boxShadow: '0 25px 60px rgba(59,130,246,0.25), 0 8px 32px rgba(0,0,0,0.15)',
                   }}
                   onError={(e) => {
                     e.target.style.display = 'none';
                     e.target.parentNode.innerHTML = `
-                      <div style="width:384px;height:384px;border-radius:50%;background:linear-gradient(135deg,#D4AF37,#8A6B18);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-size:120px;color:white;font-style:italic;box-shadow:0 25px 60px rgba(212,175,55,0.25)">D</div>
+                      <div style="width:384px;height:384px;border-radius:50%;background:linear-gradient(135deg,#3B82F6,#1D4ED8);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-size:120px;color:white;font-style:italic;box-shadow:0 25px 60px rgba(59,130,246,0.25)">D</div>
                     `;
                   }}
                 />

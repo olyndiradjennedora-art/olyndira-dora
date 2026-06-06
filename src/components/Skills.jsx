@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import {
-  SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs,
-  SiTailwindcss, SiTypescript, SiGit, SiFigma, SiThymeleaf, SiBootstrap,
-  SiNodedotjs, SiVite, SiFramer, SiSpringboot, SiPostgresql
+  SiHtml5, SiCss, SiJavascript, SiReact, 
+  SiNextdotjs, SiTailwindcss, SiTypescript, SiGit, 
+  SiFigma, SiThymeleaf, SiBootstrap, SiNodedotjs, 
+  SiVite, SiFramer, SiSpringboot, SiPostgresql, 
+  SiSpringsecurity, SiIntellijidea, SiAndroidstudio, SiFlutter
 } from 'react-icons/si';
 
 const skills = [
@@ -23,13 +25,17 @@ const skills = [
   { icon: SiBootstrap,   label: 'Bootstrap',   color: '#563D7C' },
   { icon: SiSpringboot,  label: 'Spring Boot', color: '#6DB33F' },
   { icon: SiPostgresql,  label: 'PostgreSQL',  color: '#336791' },
+  { icon: SiSpringsecurity,      label: 'Spring Security',      color: '#181717' },
+  { icon: SiIntellijidea, label: 'IntelliJ IDEA', color: '#000000' },
+  { icon: SiAndroidstudio, label: 'Android Studio', color: '#3DDC84' },
+  { icon: SiFlutter,     label: 'Flutter',     color: '#0085BA' },  
 ];
 
 export default function Skills() {
   const { t } = useTranslation();
 
   return (
-    <section id="skills" className="py-24 md:py-32 bg-white">
+    <section id="skills" className="py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
@@ -41,19 +47,21 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="h-px w-12 opacity-30" style={{ background: '#D4AF37' }} />
-            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#D4AF37' }}>
+            <div className="h-px w-12 opacity-30" style={{ background: '#3B82F6' }} />
+            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#3B82F6' }}>
               {t('skills.eyebrow')}
             </span>
-            <div className="h-px w-12 opacity-30" style={{ background: '#D4AF37' }} />
+            <div className="h-px w-12 opacity-30" style={{ background: '#3B82F6' }} />
           </div>
           <h2
-            style={{ fontFamily: 'Cormorant Garamond, serif' }}
-            className="text-4xl md:text-5xl font-light text-black"
+            style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700', fontSize: '36px' }}
+            className="text-4xl md:text-5xl "
           >
-            {t('skills.title')} <span className="italic font-semibold" style={{ color: '#D4AF37' }}>{t('skills.highlight')}</span>
+            {t('skills.title')} <span style={{ color: '#3B82F6' }}>{t('skills.highlight')}</span>
           </h2>
-          <p className="text-gray-500 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
+          <p
+          style={{fontFamily: 'Inter, sans-serif', fontSize: 18}} 
+          className="text-gray-600 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
             {t('skills.description')}
           </p>
         </motion.div>
@@ -69,8 +77,8 @@ export default function Skills() {
               transition={{ delay: i * 0.06, duration: 0.5 }}
               whileHover={{
                 scale: 1.06,
-                boxShadow: '0 8px 30px rgba(212,175,55,0.25)',
-                borderColor: '#D4AF37',
+                boxShadow: '0 8px 30px rgba(59,130,246,0.25)',
+                borderColor: '#3B82F6',
               }}
               className="group flex flex-col items-center gap-4 p-6 border border-gray-100 bg-white cursor-default transition-all duration-300"
             >
@@ -90,7 +98,7 @@ export default function Skills() {
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: i * 0.06 + 0.3, ease: 'easeOut' }}
                     className="h-full rounded-full"
-                    style={{ background: 'linear-gradient(90deg, #D4AF37, #8A6B18)' }}
+                    style={{ background: 'linear-gradient(90deg, #3B82F6, #1D4ED8)' }}
                   />
                 </div>
               </div>

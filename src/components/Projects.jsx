@@ -16,21 +16,24 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="mb-16"
+          className="mb-16 text-center"
         >
-          <div className="flex items-center gap-4 mb-6">
-            <div className="h-px w-12 opacity-30" style={{ background: '#D4AF37' }} />
-            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#D4AF37' }}>
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="h-px w-12 opacity-30" style={{ background: '#3B82F6' }} />
+            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#3B82F6' }}>
               {t('projects.work')}
             </span>
+            <div className="h-px w-12 opacity-30" style={{ background: '#3B82F6' }} />
           </div>
           <h2
-            style={{ fontFamily: 'Cormorant Garamond, serif' }}
-            className="text-4xl md:text-5xl font-light text-black"
+            style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700', fontSize: '36px' }}
+            className="text-4xl md:text-5xl text-black font-bold"
           >
-            {t('projects.title')} <span className="italic font-semibold" style={{ color: '#D4AF37' }}>{t('projects.highlight')}</span>
+            {t('projects.title')} <span style={{ color: '#3B82F6' }}>{t('projects.highlight')}</span>
           </h2>
-          <p className="text-gray-500 mt-4 max-w-xl text-sm leading-relaxed">
+          <p
+           style={{fontFamily: 'Inter, sans-serif', fontSize: 18}} 
+          className="text-gray-600 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
             {t('projects.description')}
           </p>
         </motion.div>
@@ -62,7 +65,7 @@ export default function Projects() {
                   className="w-16 h-16 rounded-2xl flex items-center justify-center mb-3 relative z-10"
                   style={{ background: `${color}20`, border: `1.5px solid ${color}40` }}
                 >
-                  <span style={{ fontFamily: 'Cormorant Garamond, serif', color, fontSize: '28px', fontStyle: 'italic' }}>
+                  <span style={{ fontFamily: 'Inter, sans-serif', fontWeight: '700', color, fontSize: '28px', fontStyle: 'italic' }}>
                     {title[0]}
                   </span>
                 </div>
@@ -78,8 +81,8 @@ export default function Projects() {
                     <div>
                       <span className="text-xs tracking-widest uppercase text-gray-400">{category}</span>
                       <h3
-                        style={{ fontFamily: 'Cormorant Garamond, serif' }}
-                        className="text-2xl font-semibold text-black mt-1"
+                        style={{ fontFamily: 'Playfair Display, serif', fontWeight: '700' }}
+                        className="text-2xl font-bold text-black mt-1"
                       >
                         {title}
                       </h3>
@@ -109,7 +112,7 @@ export default function Projects() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.97 }}
                       className="flex items-center gap-2 px-5 py-2.5 text-xs font-medium tracking-wider uppercase text-white transition-all"
-                      style={{ background: 'linear-gradient(135deg, #D4AF37, #8A6B18)' }}
+                      style={{ background: 'linear-gradient(135deg, #3B82F6, #1D4ED8)' }}
                       onClick={(e) => e.preventDefault()}
                     >
                       <FiExternalLink size={12} />
@@ -120,7 +123,7 @@ export default function Projects() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.97 }}
                       className="flex items-center gap-2 px-5 py-2.5 text-xs font-medium tracking-wider uppercase border transition-all"
-                      style={{ borderColor: '#D4AF37', color: '#D4AF37' }}
+                      style={{ borderColor: '#3B82F6', color: '#3B82F6' }}
                       onClick={(e) => e.preventDefault()}
                     >
                       <FiGithub size={12} />

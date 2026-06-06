@@ -67,7 +67,7 @@ const resources = {
             category: 'E-commerce Website',
             description:
               "A website for the African Fashion brand LYNDIRA, focused on e‑commerce (product sales and digital services).",
-            tags: ['React', 'Vite', 'Bun', 'Tailwind CSS', 'Sanity', 'Framer Motion', 'Lucide React'],
+            tags: ['React', 'Vite', 'Bun', 'Tailwind CSS', 'Framer Motion', 'Lucide React'],
             color: '#10B981',
             gradient: 'from-emerald-50 to-teal-50',
           },
@@ -169,7 +169,7 @@ const resources = {
         github: 'GitHub',
         items: [
           {
-            title: "Application de gestion des notes et des délibérations (ITIM)",
+            title: "Application de gestion des notes et des délibérations de soutenance : cas de l'ITIM",
             category: 'Application Web',
             description:
               "J'ai créé une application web de gestion des notes et des délibérations de soutenance : cas de l'ITIM (Institut des Technologies de l'Information et de Management).",

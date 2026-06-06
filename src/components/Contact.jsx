@@ -37,19 +37,21 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="h-px w-12 opacity-20" style={{ background: '#D4AF37' }} />
-            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#D4AF37' }}>
+            <div className="h-px w-12 opacity-20" style={{ background: '#3B82F6' }} />
+            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#3B82F6' }}>
               {t('contact.eyebrow')}
             </span>
-            <div className="h-px w-12 opacity-20" style={{ background: '#D4AF37' }} />
+            <div className="h-px w-12 opacity-20" style={{ background: '#3B82F6' }} />
           </div>
           <h2
-            style={{ fontFamily: 'Cormorant Garamond, serif' }}
-            className="text-4xl md:text-5xl font-light text-white"
+            style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700', fontSize: '36px' }}
+            className="text-4xl md:text-5xl text-white font-bold"
           >
-            {t('contact.heading')} <span className="italic font-semibold" style={{ color: '#D4AF37' }}>{t('contact.highlight')}</span>
+            {t('contact.heading')} <span style={{ color: '#3B82F6' }}>{t('contact.highlight')}</span>
           </h2>
-          <p className="text-gray-400 mt-4 max-w-md mx-auto text-sm leading-relaxed">
+          <p
+           style={{fontFamily: 'Inter, sans-serif', fontSize: 18}} 
+          className="text-gray-600 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
             {t('contact.paragraph')}
           </p>
         </motion.div>
@@ -74,7 +76,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 placeholder={t('contact.placeholderName')}
-                className="bg-transparent border border-gray-700 text-white placeholder-gray-600 px-4 py-3.5 text-sm outline-none transition-all focus:border-yellow-500 focus:ring-0"
+                className="bg-transparent border border-gray-700 text-white placeholder-gray-600 px-4 py-3.5 text-sm outline-none transition-all focus:border-blue-500 focus:ring-0"
                 style={{ '--tw-ring-shadow': 'none' }}
               />
             </div>
@@ -88,7 +90,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 placeholder={t('contact.placeholderEmail')}
-                className="bg-transparent border border-gray-700 text-white placeholder-gray-600 px-4 py-3.5 text-sm outline-none transition-all focus:border-yellow-500"
+                className="bg-transparent border border-gray-700 text-white placeholder-gray-600 px-4 py-3.5 text-sm outline-none transition-all focus:border-blue-500"
               />
             </div>
           </div>
@@ -103,7 +105,7 @@ export default function Contact() {
               required
               rows={6}
               placeholder={t('contact.placeholderMessage')}
-              className="bg-transparent border border-gray-700 text-white placeholder-gray-600 px-4 py-3.5 text-sm outline-none transition-all focus:border-yellow-500 resize-none"
+              className="bg-transparent border border-gray-700 text-white placeholder-gray-600 px-4 py-3.5 text-sm outline-none transition-all focus:border-blue-500 resize-none"
             />
           </div>
 
@@ -114,7 +116,7 @@ export default function Contact() {
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="flex items-center gap-3 px-8 py-3.5 text-sm font-medium tracking-widest uppercase text-white transition-all"
-              style={{ background: sent ? '#10B981' : 'linear-gradient(135deg, #D4AF37, #8A6B18)' }}
+              style={{ background: sent ? '#10B981' : 'linear-gradient(135deg, #3B82F6, #1D4ED8)' }}
             >
               {sent ? (
                 <>
@@ -130,7 +132,7 @@ export default function Contact() {
         </motion.form>
 
         {/* Divider */}
-        <div className="my-16 h-px opacity-10" style={{ background: '#D4AF37' }} />
+        <div className="my-16 h-px opacity-10" style={{ background: '#3B82F6' }} />
 
         {/* Social Links */}
         <motion.div
@@ -148,8 +150,8 @@ export default function Contact() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.15, color: '#D4AF37' }}
-                className="text-gray-600 transition-colors duration-200 hover:text-yellow-500"
+                whileHover={{ scale: 1.15, color: '#3B82F6' }}
+                className="text-gray-600 transition-colors duration-200 hover:text-blue-500"
                 aria-label={label}
               >
                 <Icon size={20} />

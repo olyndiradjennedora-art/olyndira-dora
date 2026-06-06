@@ -40,8 +40,8 @@ export default function Navbar() {
         <a href="#home" className="flex items-center gap-2 group">
           <div className="relative">
             <span
-              style={{ fontFamily: 'Cormorant Garamond, serif', color: '#D4AF37', fontStyle: 'italic' }}
-              className="text-4xl font-light leading-none select-none"
+              style={{ fontFamily: 'Popping, serif, Bold', color: '#3B82F6', fontStyle: 'italic' }}
+              className="text-4xl leading-none select-none font-semibold italic"
             >
               D.
             </span>

@@ -5,28 +5,30 @@ import { useTranslation } from 'react-i18next';
 import {
   SiReact, SiNextdotjs, SiTypescript, SiTailwindcss,
   SiJavascript, SiHtml5, SiCss, SiFigma, 
-  SiGit, SiXampp, SiThymeleaf, SiMysql,
-  SiBootstrap, SiSpringboot, SiPostgresql, SiOpenjdk, SiSqlite
+  SiGit, SiThymeleaf, SiMysql, SiBootstrap, 
+  SiSpringboot, SiPostgresql, SiOpenjdk, SiSqlite, 
+  SiIntellijidea, SiAndroidstudio, SiFlutter,
 } from 'react-icons/si';
 
 const techStack = [
   { icon: SiReact, label: 'React', color: '#61DAFB' },
   { icon: SiNextdotjs, label: 'Next.js', color: '#ffffff' },
   { icon: SiTypescript, label: 'TypeScript', color: '#3178C6' },
-  { icon: SiJavascript, label: 'JavaScript', color: '#F7DF1E' },
+  { icon: SiJavascript, label: 'JavaScript', color: '#F7DF1E' },  
   { icon: SiTailwindcss, label: 'Tailwind', color: '#06B6D4' },
   { icon: SiHtml5, label: 'HTML5', color: '#E34F26' },
   { icon: SiCss, label: 'CSS3', color: '#1572B6' },
   { icon: SiFigma, label: 'Figma', color: '#F24E1E' },
   { icon: SiGit, label: 'Git', color: '#F05032' },
-  { icon: SiXampp, label: 'XAMPP', color: '#FB9C2E' },
   { icon: SiThymeleaf, label: 'Thymeleaf', color: '#005C00' },
   { icon: SiBootstrap, label: 'Bootstrap', color: '#563D7C' },
   { icon: SiSpringboot, label: 'Spring Boot', color: '#6DB33F' },
   { icon: SiOpenjdk, label: 'Java', color: '#5382a1' },
   { icon: SiSqlite, label: 'SQL', color: '#003B57' },
   { icon: SiPostgresql, label: 'PostgreSQL', color: '#336791' },
-  { icon: SiMysql, label: 'MySQL', color: '#00758F' }
+  { icon: SiMysql, label: 'MySQL', color: '#00758F' },
+  { icon: SiAndroidstudio, label: 'Android Studio', color: '#3DDC84' },
+  { icon: SiFlutter, label: 'Flutter', color: '#0085BA' },
 ];
 
 
@@ -54,12 +56,12 @@ export default function About() {
 
         {/* Section Header */}
         <FadeUp>
-          <div className="flex items-center gap-4 mb-16">
-            <div className="h-px flex-1 max-w-xs opacity-20" style={{ background: '#D4AF37' }} />
-            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#D4AF37' }}>
+          <div className="flex items-center gap-4 mb-16 justify-center">
+            <div className="h-px flex-1 max-w-xs opacity-20" style={{ background: '#3B82F6' }} />
+            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#3B82F6' }}>
               {t('about.section')}
             </span>
-            <div className="h-px w-8 opacity-20" style={{ background: '#D4AF37' }} />
+            <div className="h-px w-8 opacity-20" style={{ background: '#3B82F6' }} />
           </div>
         </FadeUp>
 
@@ -69,24 +71,28 @@ export default function About() {
           <div className="space-y-8">
             <FadeUp delay={0.1}>
               <h2
-                style={{ fontFamily: 'Cormorant Garamond, serif' }}
-                className="text-4xl md:text-5xl font-light text-white leading-tight"
+                style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700', fontSize: '36px' }}
+                className="text-4xl md:text-5xl text-white leading-tight"
               >
                 {t('about.heading')}
-                <span className="italic font-semibold" style={{ color: '#D4AF37' }}>
+                <span style={{ color: '#3B82F6' }}>
                   {t('about.highlight')}
                 </span>
               </h2>
             </FadeUp>
 
             <FadeUp delay={0.2}>
-              <p className="text-gray-400 leading-relaxed text-base">
+              <p 
+              style={{fontFamily: 'Inter, sans-serif', fontWeight: '1px', fontSize: 19}}
+              className="text-white leading-relaxed text-base justify-center">
                 {t('about.paragraph1')}
               </p>
             </FadeUp>
 
             <FadeUp delay={0.3}>
-              <p className="text-gray-400 leading-relaxed text-base">
+              <p 
+              style={{fontFamily: 'Inter, sans-serif', fontWeight: '1px', fontSize: 19}}
+              className="text-white leading-relaxed text-base justify-center">
                 {t('about.paragraph2')}
               </p>
             </FadeUp>
@@ -96,11 +102,11 @@ export default function About() {
           <FadeUp delay={0.3}>
             <div>
               <h3
-                style={{ fontFamily: 'Cormorant Garamond, serif' }}
-                className="text-2xl font-light text-white mb-8"
+                style={{ fontFamily: 'Playfair Display, serif', fontWeight: '500' }}
+                className="text-2xl text-white mb-8"
               >
                 {t('about.techHeadingStart')}{' '}
-                <span className="italic" style={{ color: '#D4AF37' }}>
+                <span style={{ color: '#3B82F6' }}>
                   {t('about.techHeadingHighlight')}
                 </span>
               </h3>
@@ -112,7 +118,7 @@ export default function About() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.07, duration: 0.4 }}
-                    whileHover={{ scale: 1.05, borderColor: '#D4AF37' }}
+                    whileHover={{ scale: 1.05, borderColor: '#3B82F6' }}
                     className="flex flex-col items-center gap-3 p-4 rounded border border-gray-700 cursor-default transition-all duration-300"
                     style={{ background: '#1F2937' }}
                   >

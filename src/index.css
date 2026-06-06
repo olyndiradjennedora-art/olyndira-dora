@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mangal&display=swap');
 
 @import "tailwindcss";
 
 :root {
-  --gold: #D4AF37;
-  --gold-dark: #8A6B18;
-  --gold-light: #E8CC6A;
+  --blue: #3B82F6;
+  --blue-dark: #225edf;
+  --blue-light: #0c32ef;
   --charcoal: #111827;
   --charcoal-mid: #1F2937;
 }
@@ -24,8 +25,12 @@ p {
   font-family: 'Inter', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', sans-serif;
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Custom scrollbar */

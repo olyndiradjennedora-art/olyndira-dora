@@ -16,19 +16,21 @@ export default function Faq() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="h-px w-12 opacity-30" style={{ background: '#D4AF37' }} />
-            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#D4AF37' }}>
+            <div className="h-px w-12 opacity-30" style={{ background: '#3B82F6' }} />
+            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#3B82F6' }}>
               {t('faq.eyebrow')}
             </span>
-            <div className="h-px w-12 opacity-30" style={{ background: '#D4AF37' }} />
+            <div className="h-px w-12 opacity-30" style={{ background: '#3B82F6' }} />
           </div>
           <h2
-            style={{ fontFamily: 'Cormorant Garamond, serif' }}
-            className="text-4xl md:text-5xl font-light text-black"
+            style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700', fontSize: '36px' }}
+            className="text-4xl md:text-5xl text-black font-bold"
           >
-            {t('faq.title')} <span className="italic font-semibold" style={{ color: '#D4AF37' }}>{t('faq.highlight')}</span>
+            {t('faq.title')} <span style={{ color: '#3B82F6' }}>{t('faq.highlight')}</span>
           </h2>
-          <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-sm leading-relaxed">
+          <p
+           style={{fontFamily: 'Inter, sans-serif', fontSize: 18}} 
+          className="text-gray-600 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
             {t('faq.description')}
           </p>
         </motion.div>
@@ -43,10 +45,13 @@ export default function Faq() {
               transition={{ delay: index * 0.08, duration: 0.5 }}
               className="p-6 border border-gray-200 rounded-3xl bg-white shadow-sm"
             >
-              <h3 className="text-lg font-semibold text-black mb-3" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              <h3 className="text-lg font-semibold text-black mb-3" 
+              style={{ fontFamily: 'Playfair Display, serif', fontWeight:300, fontSize: 20}}>
                 {question}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p
+               style={{fontFamily: 'Inter, sans-serif', fontWeight: '300', fontSize: 15}}
+               className="text-gray-800 text-sm leading-relaxed">
                 {answer}
               </p>
             </motion.div>
