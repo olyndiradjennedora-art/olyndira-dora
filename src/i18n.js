@@ -13,8 +13,8 @@ const resources = {
       hero: {
         eyebrow: 'Portfolio',
         greeting: "Hi, I'm",
-        title: 'Frontend Web Developer',
-        tagline: 'I transform complex logic into elegant, high-performance user interfaces where craft meets code.',
+        title: 'Full-Stack Developer',
+        tagline: 'Full-Stack Developer, I transform ideas into modern, high-performance, and intuitive web applications.',
         viewWork: 'View My Work',
         getInTouch: 'Get in Touch',
         scroll: 'Scroll',
@@ -22,11 +22,11 @@ const resources = {
       about: {
         section: 'About Me',
         heading: 'Designing and Building',
-        highlight: 'web applications',
+        highlight: ' Web',
         paragraph1: "I am an analyst-developer specializing in both frontend and backend disciplines. I design and implement web applications using React for the frontend and Java with Spring Boot for server-side development. I emphasize data collection and analysis, UML modeling, and thorough architectural design before writing code.",
         paragraph2: "My work blends analytical rigor and practical engineering: gathering requirements, modeling systems, producing clear designs, then implementing robust, maintainable solutions. I am also expanding my skillset into mobile development.",
-        techHeadingStart: 'Technologies I',
-        techHeadingHighlight: 'Favor',
+        techHeadingStart: 'Tools and Technologies I',
+        techHeadingHighlight: 'Like',
       },
 
       skills: {
@@ -45,29 +45,29 @@ const resources = {
         github: 'GitHub',
         items: [
           {
-            title: 'FinTrack Dashboard',
+            title: 'Thesis Defense Management (ITIM)',
             category: 'Web Application',
             description:
-              'A real-time personal finance dashboard built with React and TypeScript. Features live chart updates, budget tracking, and custom data visualizations using D3.js. Prioritized accessibility with full keyboard navigation and ARIA labels.',
-            tags: ['React', 'TypeScript', 'D3.js', 'Tailwind'],
+              "I built a web application to manage grades and thesis defense deliberations for ITIM (Institut des Technologies de l'Information et de Management).",
+            tags: ['UML', 'SQL Server 2019', 'IntelliJ', 'Java', 'Spring Boot', 'Spring Security', 'Thymeleaf', 'jQuery', 'Bootstrap'],
             color: '#D4AF37',
             gradient: 'from-amber-50 to-yellow-50',
           },
           {
-            title: 'Luminary UI Kit',
-            category: 'Component Library',
+            title: "MUNAS'PHERE Agency Website",
+            category: 'Marketing Website',
             description:
-              'An open-source React component library with 40+ fully accessible components. Built with Radix UI primitives, styled with Tailwind, and documented with Storybook. Supports dark mode and custom theming out of the box.',
-            tags: ['React', 'Radix UI', 'Storybook', 'NPM'],
+              "A website created for MUNAS'PHERE (communication and digital marketing agency).",
+            tags: ['React', 'Vite', 'Bun', 'Tailwind CSS', 'Sanity', 'TanStack', 'Framer Motion', 'Lucide React'],
             color: '#6366F1',
             gradient: 'from-indigo-50 to-purple-50',
           },
           {
-            title: 'Archi Studio',
-            category: 'Marketing Website',
+            title: 'LYNDIRA - African Fashion',
+            category: 'E-commerce Website',
             description:
-              'A high-performance marketing site for an architecture firm built with Next.js 14 and App Router. Achieved 98/100 Lighthouse score, sub-1s LCP, and fluid scroll-driven animations throughout.',
-            tags: ['Next.js', 'Framer Motion', 'Sanity CMS', 'Vercel'],
+              "A website for the African Fashion brand LYNDIRA, focused on e‑commerce (product sales and digital services).",
+            tags: ['React', 'Vite', 'Bun', 'Tailwind CSS', 'Sanity', 'Framer Motion', 'Lucide React'],
             color: '#10B981',
             gradient: 'from-emerald-50 to-teal-50',
           },
@@ -117,7 +117,7 @@ const resources = {
         findOnline: 'Find me online',
       },
       footer: {
-        role: 'Frontend Developer',
+        role: 'Full-Stack Developer',
         copyright: 'Designed & Built with {{name}}',
       },
       locale: {
@@ -136,9 +136,9 @@ const resources = {
       },
       hero: {
         eyebrow: 'Portfolio',
-        greeting: 'Bonjour, je suis',
-        title: 'Développeuse Frontend',
-        tagline: 'Je transforme la logique complexe en interfaces élégantes et performantes, là où l’esthétique rencontre le code.',
+        greeting: 'Salut, je suis',
+        title: 'Développeuse Full-Stack',
+        tagline: 'Développeuse Full-Stack, je transforme des idées en applications web modernes, performantes et intuitives.',
         viewWork: 'Voir mes projets',
         getInTouch: 'Contactez-moi',
         scroll: 'Défiler',
@@ -146,11 +146,11 @@ const resources = {
       about: {
         section: 'À propos',
         heading: 'Conception et développement',
-        highlight: "d’applications web",
+        highlight: " web",
         paragraph1: "Je suis une analyste-développeuse spécialisée à la fois en frontend et backend. J'utilise React pour l'interface et Java avec Spring Boot pour les services back-end. J'attache beaucoup d'importance à la collecte et l'analyse des données, à la modélisation UML et à la conception complète avant l'implémentation.",
         paragraph2: "Mon approche combine rigueur analytique et pratique d'ingénierie : collecte d'exigences, modélisation, conception détaillée, puis implémentation de solutions robustes et maintenables. J'apprends actuellement le développement mobile.",
-        techHeadingStart: 'Technologies que',
-        techHeadingHighlight: "j'apprécie",
+        techHeadingStart: 'Outils & Technologies que',
+        techHeadingHighlight: "j'aime",
       },
 
       skills: {
@@ -169,29 +169,29 @@ const resources = {
         github: 'GitHub',
         items: [
           {
-            title: 'FinTrack Dashboard',
+            title: "Application de gestion des notes et des délibérations (ITIM)",
             category: 'Application Web',
             description:
-              'Un tableau de bord financier en temps réel construit avec React et TypeScript. Il propose des graphiques live, le suivi du budget et des visualisations de données personnalisées avec D3.js. L’accessibilité est priorisée avec une navigation clavier complète et des labels ARIA.',
-            tags: ['React', 'TypeScript', 'D3.js', 'Tailwind'],
+              "J'ai créé une application web de gestion des notes et des délibérations de soutenance : cas de l'ITIM (Institut des Technologies de l'Information et de Management).",
+            tags: ['UML', 'SQL Server 2019', 'IntelliJ', 'Java', 'Spring Boot', 'Spring Security', 'Thymeleaf', 'jQuery', 'Bootstrap'],
             color: '#D4AF37',
             gradient: 'from-amber-50 to-yellow-50',
           },
           {
-            title: 'Luminary UI Kit',
-            category: 'Bibliothèque de composants',
+            title: "Site web - MUNAS'PHERE",
+            category: 'Site Marketing',
             description:
-              'Une bibliothèque de composants React open-source avec plus de 40 composants entièrement accessibles. Construite avec Radix UI, stylée avec Tailwind, et documentée avec Storybook. Prend en charge le mode sombre et le theming personnalisé dès la sortie de boîte.',
-            tags: ['React', 'Radix UI', 'Storybook', 'NPM'],
+              "J'ai créé un site web pour l'agence MUNAS'PHERE (Agence de conseil en Communication et Marketing Digital).",
+            tags: ['React', 'Vite', 'Bun', 'Tailwind CSS', 'Sanity', 'TanStack', 'Framer Motion', 'Lucide React'],
             color: '#6366F1',
             gradient: 'from-indigo-50 to-purple-50',
           },
           {
-            title: 'Archi Studio',
-            category: 'Site marketing',
+            title: 'Site e-commerce - LYNDIRA (African Fashion)',
+            category: 'E‑commerce',
             description:
-              'Un site marketing haute performance pour un cabinet d’architecture construit avec Next.js 14 et App Router. Score Lighthouse de 98/100, LCP sous 1s et animations fluides pilotées par le scroll.',
-            tags: ['Next.js', 'Framer Motion', 'Sanity CMS', 'Vercel'],
+              "J'ai créé un site web pour la publication d'une marque African Fashion (LYNDIRA) qui fait dans l'e‑commerce (vente de produit et de services numérique).",
+            tags: ['React', 'Vite', 'Bun', 'Tailwind CSS', 'Sanity', 'Framer Motion', 'Lucide React'],
             color: '#10B981',
             gradient: 'from-emerald-50 to-teal-50',
           },
@@ -241,7 +241,7 @@ const resources = {
         findOnline: 'Retrouvez-moi en ligne',
       },
       footer: {
-        role: 'Développeuse Frontend',
+        role: 'Développeuse Full-Stack',
         copyright: 'Conçu & réalisé par {{name}}',
       },
       locale: {
