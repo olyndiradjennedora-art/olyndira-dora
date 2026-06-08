@@ -3,23 +3,41 @@ import { useTranslation } from 'react-i18next';
 export default function Footer() {
   const { t } = useTranslation();
   const year = new Date().getFullYear();
+
   return (
-    <footer className="bg-black py-8">
+    <footer
+      className="py-8"
+      style={{ background: 'var(--bg-footer)', transition: 'background 0.3s ease' }}
+    >
       <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <span
-            style={{ fontFamily: 'Popping, serif, Bold', color: '#3B82F6', fontStyle: 'italic' }}
-            className="text-3xl font-semibold italic leading-none"
+            style={{ fontFamily: 'Playfair Display, serif', color: '#94A3B8', fontStyle: 'italic', fontWeight: '600', fontSize: '22px' }}
+            className="leading-none select-none"
           >
-            D.
+            Olyndira{' '}
+            <span style={{ color: '#3B82F6' }}>D.</span>
           </span>
-          <span 
-           style={{fontFamily: 'Inter, sans-serif', fontWeight: '300', fontSize: 15}}
-           className="text-gray-600 text-xs">{t('footer.role')}</span>
+          <span
+            style={{
+              fontFamily: 'Inter, sans-serif',
+              fontWeight: '300',
+              fontSize: '15px',
+              color: '#94A3B8',
+            }}
+          >
+            {t('footer.role')}
+          </span>
         </div>
         <p
-         style={{fontFamily: 'Inter, sans-serif', fontWeight: '300', fontSize: 15}}
-         className="text-gray-700 text-xs tracking-wider">
+          style={{
+            fontFamily: 'Inter, sans-serif',
+            fontWeight: '300',
+            fontSize: '15px',
+            color: '#64748B',
+          }}
+          className="tracking-wider"
+        >
           © {year} — {t('footer.copyright', { name: 'Olyndira DJenne D.' })}
         </p>
       </div>

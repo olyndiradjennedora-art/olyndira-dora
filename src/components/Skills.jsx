@@ -1,41 +1,129 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import {
-  SiHtml5, SiCss, SiJavascript, SiReact, 
-  SiNextdotjs, SiTailwindcss, SiTypescript, SiGit, 
-  SiFigma, SiThymeleaf, SiBootstrap, SiNodedotjs, 
-  SiVite, SiFramer, SiSpringboot, SiPostgresql, 
-  SiSpringsecurity, SiIntellijidea, SiAndroidstudio, SiFlutter
+  SiHtml5, SiCss, SiJavascript, SiTypescript,
+  SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap,
+  SiFigma, SiVite, SiFramer,
+  SiNodedotjs, SiSpringboot, SiSpringsecurity, SiThymeleaf, SiOpenjdk,
+  SiGit, SiIntellijidea, SiAndroidstudio, SiFlutter,
+  SiPostgresql, SiMysql, SiSqlite,
 } from 'react-icons/si';
 
-const skills = [
-  { icon: SiHtml5,       label: 'HTML5',       color: '#E34F26' },
-  { icon: SiCss,        label: 'CSS3',        color: '#1572B6'  },
-  { icon: SiJavascript,  label: 'JavaScript',  color: '#F7DF1E' },
-  { icon: SiReact,       label: 'React',       color: '#61DAFB' },
-  { icon: SiNextdotjs,   label: 'Next.js',     color: '#000000' },
-  { icon: SiTailwindcss, label: 'Tailwind',    color: '#06B6D4' },
-  { icon: SiTypescript,  label: 'TypeScript',  color: '#3178C6' },
-  { icon: SiGit,         label: 'Git',         color: '#F05032' },
-  { icon: SiFigma,       label: 'Figma',       color: '#F24E1E' },
-  { icon: SiNodedotjs,   label: 'Node.js',     color: '#339933' },
-  { icon: SiVite,        label: 'Vite',        color: '#646CFF' },
-  { icon: SiFramer,      label: 'Framer Motion', color: '#0055FF' },
-  { icon: SiThymeleaf,   label: 'Thymeleaf',   color: '#005C00' },
-  { icon: SiBootstrap,   label: 'Bootstrap',   color: '#563D7C' },
-  { icon: SiSpringboot,  label: 'Spring Boot', color: '#6DB33F' },
-  { icon: SiPostgresql,  label: 'PostgreSQL',  color: '#336791' },
-  { icon: SiSpringsecurity,      label: 'Spring Security',      color: '#181717' },
-  { icon: SiIntellijidea, label: 'IntelliJ IDEA', color: '#000000' },
-  { icon: SiAndroidstudio, label: 'Android Studio', color: '#3DDC84' },
-  { icon: SiFlutter,     label: 'Flutter',     color: '#0085BA' },  
+const categories = [
+  {
+    label: 'Frontend',
+    color: '#3B82F6',
+    skills: [
+      { icon: SiHtml5,       label: 'HTML5',         color: '#E34F26' },
+      { icon: SiCss,         label: 'CSS3',          color: '#1572B6' },
+      { icon: SiJavascript,  label: 'JavaScript',    color: '#D4A800' },
+      { icon: SiTypescript,  label: 'TypeScript',    color: '#3178C6' },
+      { icon: SiReact,       label: 'React',         color: '#00B0CC' },
+      { icon: SiNextdotjs,   label: 'Next.js',       color: '#666666' },
+      { icon: SiTailwindcss, label: 'Tailwind CSS',  color: '#06B6D4' },
+      { icon: SiBootstrap,   label: 'Bootstrap',     color: '#7952B3' },
+      { icon: SiFigma,       label: 'Figma',         color: '#F24E1E' },
+      { icon: SiVite,        label: 'Vite',          color: '#646CFF' },
+      { icon: SiFramer,      label: 'Framer Motion', color: '#0055FF' },
+    ],
+  },
+  {
+    label: 'Backend',
+    color: '#10B981',
+    skills: [
+      { icon: SiOpenjdk,        label: 'Java',            color: '#5382a1' },
+      { icon: SiSpringboot,     label: 'Spring Boot',     color: '#6DB33F' },
+      { icon: SiSpringsecurity, label: 'Spring Security', color: '#6DB33F' },
+      { icon: SiThymeleaf,      label: 'Thymeleaf',       color: '#005C00' },
+      { icon: SiNodedotjs,      label: 'Node.js',         color: '#339933' },
+    ],
+  },
+  {
+    label: 'DevOps',
+    color: '#F59E0B',
+    skills: [
+      { icon: SiGit,           label: 'Git',            color: '#F05032' },
+      { icon: SiIntellijidea,  label: 'IntelliJ IDEA',  color: '#FE315D' },
+      { icon: SiAndroidstudio, label: 'Android Studio', color: '#3DDC84' },
+      { icon: SiFlutter,       label: 'Flutter',        color: '#0085BA' },
+    ],
+  },
+  {
+    label: 'BDD',
+    color: '#8B5CF6',
+    skills: [
+      { icon: SiPostgresql, label: 'PostgreSQL', color: '#336791' },
+      { icon: SiMysql,      label: 'MySQL',      color: '#00758F' },
+      { icon: SiSqlite,     label: 'SQLite',     color: '#003B57' },
+    ],
+  },
 ];
+
+function CategoryCard({ category, index }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      className="flex flex-col"
+    >
+      {/* Category header */}
+      <div className="flex items-center gap-3 mb-6">
+        <div className="w-1 h-6 rounded-full" style={{ background: category.color }} />
+        <span
+          className="text-sm font-bold tracking-[0.2em] uppercase"
+          style={{ color: category.color }}
+        >
+          {category.label}
+        </span>
+        <div className="flex-1 h-px opacity-25" style={{ background: category.color }} />
+      </div>
+
+      {/* Skills grid */}
+      <div className="grid grid-cols-3 gap-3">
+        {category.skills.map(({ icon: Icon, label, color }, i) => (
+          <motion.div
+            key={label}
+            initial={{ opacity: 0, scale: 0.85 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 + i * 0.05, duration: 0.4 }}
+            whileHover={{ scale: 1.06, borderColor: category.color }}
+            className="flex flex-col items-center gap-2 p-3 rounded-xl cursor-default transition-all duration-300"
+            style={{
+              background: 'var(--skill-card-bg)',
+              border: '1px solid var(--skill-card-border)',
+            }}
+          >
+            <div
+              className="w-10 h-10 rounded-lg flex items-center justify-center"
+              style={{ background: `${color}18` }}
+            >
+              <Icon size={22} style={{ color }} />
+            </div>
+            <span
+              className="text-xs text-center leading-tight"
+              style={{ color: 'var(--skill-label)' }}
+            >
+              {label}
+            </span>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  );
+}
 
 export default function Skills() {
   const { t } = useTranslation();
 
   return (
-    <section id="skills" className="py-24 md:py-32">
+    <section
+      id="skills"
+      className="py-24 md:py-32"
+      style={{ background: 'var(--bg-a)', transition: 'background 0.3s ease' }}
+    >
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
@@ -54,55 +142,32 @@ export default function Skills() {
             <div className="h-px w-12 opacity-30" style={{ background: '#3B82F6' }} />
           </div>
           <h2
-            style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700', fontSize: '36px' }}
-            className="text-4xl md:text-5xl "
+            style={{
+              fontFamily: 'Montserrat, sans-serif',
+              fontWeight: '700',
+              fontSize: '36px',
+              color: 'var(--text-heading)',
+            }}
           >
-            {t('skills.title')} <span style={{ color: '#3B82F6' }}>{t('skills.highlight')}</span>
+            {t('skills.title')}{' '}
+            <span style={{ color: '#3B82F6' }}>{t('skills.highlight')}</span>
           </h2>
           <p
-          style={{fontFamily: 'Inter, sans-serif', fontSize: 18}} 
-          className="text-gray-600 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
+            style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '17px',
+              color: 'var(--text-muted)',
+            }}
+            className="mt-4 max-w-xl mx-auto leading-relaxed"
+          >
             {t('skills.description')}
           </p>
         </motion.div>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
-          {skills.map(({ icon: Icon, label, color, level }, i) => (
-            <motion.div
-              key={label}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.06, duration: 0.5 }}
-              whileHover={{
-                scale: 1.06,
-                boxShadow: '0 8px 30px rgba(59,130,246,0.25)',
-                borderColor: '#3B82F6',
-              }}
-              className="group flex flex-col items-center gap-4 p-6 border border-gray-100 bg-white cursor-default transition-all duration-300"
-            >
-              <div
-                className="w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300"
-                style={{ background: `${color}15` }}
-              >
-                <Icon size={30} style={{ color }} />
-              </div>
-              <div className="text-center">
-                <span className="text-sm font-medium text-gray-700 tracking-wide">{label}</span>
-                {/* Skill bar */}
-                <div className="mt-3 w-full h-0.5 bg-gray-100 rounded-full overflow-hidden">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${level}%` }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: i * 0.06 + 0.3, ease: 'easeOut' }}
-                    className="h-full rounded-full"
-                    style={{ background: 'linear-gradient(90deg, #3B82F6, #1D4ED8)' }}
-                  />
-                </div>
-              </div>
-            </motion.div>
+        {/* Categories 2×2 */}
+        <div className="grid md:grid-cols-2 gap-12">
+          {categories.map((cat, i) => (
+            <CategoryCard key={cat.label} category={cat} index={i} />
           ))}
         </div>
 

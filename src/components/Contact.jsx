@@ -18,14 +18,30 @@ export default function Contact() {
   };
 
   const socials = [
-    { icon: FiGithub, label: 'GitHub', href: 'https://github.com' },
+    { icon: FiGithub,   label: 'GitHub',  href: 'https://github.com' },
     { icon: FiLinkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
-    { icon: FiTwitter, label: 'Twitter', href: 'https://twitter.com' },
-    { icon: FiMail, label: 'Email', href: 'mailto:hello@example.com' },
+    { icon: FiTwitter,  label: 'Twitter',  href: 'https://twitter.com' },
+    { icon: FiMail,     label: 'Email',    href: 'mailto:hello@example.com' },
   ];
 
+  const inputStyle = {
+    background: 'transparent',
+    border: '1px solid var(--input-border)',
+    color: 'var(--input-text)',
+    outline: 'none',
+    padding: '14px 16px',
+    fontSize: '14px',
+    width: '100%',
+    transition: 'border-color 0.2s',
+    fontFamily: 'Inter, sans-serif',
+  };
+
   return (
-    <section id="contact" className="py-24 md:py-32" style={{ background: '#111827' }}>
+    <section
+      id="contact"
+      className="py-24 md:py-32"
+      style={{ background: 'var(--bg-b)', transition: 'background 0.3s ease' }}
+    >
       <div className="max-w-4xl mx-auto px-6">
 
         {/* Header */}
@@ -37,21 +53,27 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="h-px w-12 opacity-20" style={{ background: '#3B82F6' }} />
+            <div className="h-px w-12 opacity-30" style={{ background: '#3B82F6' }} />
             <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#3B82F6' }}>
               {t('contact.eyebrow')}
             </span>
-            <div className="h-px w-12 opacity-20" style={{ background: '#3B82F6' }} />
+            <div className="h-px w-12 opacity-30" style={{ background: '#3B82F6' }} />
           </div>
           <h2
-            style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '700', fontSize: '36px' }}
-            className="text-4xl md:text-5xl text-white font-bold"
+            style={{
+              fontFamily: 'Montserrat, sans-serif',
+              fontWeight: '700',
+              fontSize: '36px',
+              color: 'var(--text-heading)',
+            }}
           >
-            {t('contact.heading')} <span style={{ color: '#3B82F6' }}>{t('contact.highlight')}</span>
+            {t('contact.heading')}{' '}
+            <span style={{ color: '#3B82F6' }}>{t('contact.highlight')}</span>
           </h2>
           <p
-           style={{fontFamily: 'Inter, sans-serif', fontSize: 18}} 
-          className="text-gray-600 mt-4 max-w-xl mx-auto text-sm leading-relaxed">
+            style={{ fontFamily: 'Inter, sans-serif', fontSize: '17px', color: 'var(--text-muted)' }}
+            className="mt-4 max-w-xl mx-auto leading-relaxed"
+          >
             {t('contact.paragraph')}
           </p>
         </motion.div>
@@ -66,9 +88,13 @@ export default function Contact() {
           className="space-y-5"
         >
           <div className="grid sm:grid-cols-2 gap-5">
-            {/* Name */}
             <div className="flex flex-col gap-2">
-              <label className="text-xs tracking-widest uppercase text-gray-500">{t('contact.name')}</label>
+              <label
+                className="text-xs tracking-widest uppercase"
+                style={{ color: 'var(--text-muted)' }}
+              >
+                {t('contact.name')}
+              </label>
               <input
                 type="text"
                 name="name"
@@ -76,13 +102,18 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 placeholder={t('contact.placeholderName')}
-                className="bg-transparent border border-gray-700 text-white placeholder-gray-600 px-4 py-3.5 text-sm outline-none transition-all focus:border-blue-500 focus:ring-0"
-                style={{ '--tw-ring-shadow': 'none' }}
+                style={inputStyle}
+                onFocus={e => e.target.style.borderColor = 'var(--input-focus-border)'}
+                onBlur={e => e.target.style.borderColor = 'var(--input-border)'}
               />
             </div>
-            {/* Email */}
             <div className="flex flex-col gap-2">
-              <label className="text-xs tracking-widest uppercase text-gray-500">{t('contact.email')}</label>
+              <label
+                className="text-xs tracking-widest uppercase"
+                style={{ color: 'var(--text-muted)' }}
+              >
+                {t('contact.email')}
+              </label>
               <input
                 type="email"
                 name="email"
@@ -90,14 +121,20 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 placeholder={t('contact.placeholderEmail')}
-                className="bg-transparent border border-gray-700 text-white placeholder-gray-600 px-4 py-3.5 text-sm outline-none transition-all focus:border-blue-500"
+                style={inputStyle}
+                onFocus={e => e.target.style.borderColor = 'var(--input-focus-border)'}
+                onBlur={e => e.target.style.borderColor = 'var(--input-border)'}
               />
             </div>
           </div>
 
-          {/* Message */}
           <div className="flex flex-col gap-2">
-            <label className="text-xs tracking-widest uppercase text-gray-500">{t('contact.message')}</label>
+            <label
+              className="text-xs tracking-widest uppercase"
+              style={{ color: 'var(--text-muted)' }}
+            >
+              {t('contact.message')}
+            </label>
             <textarea
               name="message"
               value={form.message}
@@ -105,34 +142,31 @@ export default function Contact() {
               required
               rows={6}
               placeholder={t('contact.placeholderMessage')}
-              className="bg-transparent border border-gray-700 text-white placeholder-gray-600 px-4 py-3.5 text-sm outline-none transition-all focus:border-blue-500 resize-none"
+              style={{ ...inputStyle, resize: 'none' }}
+              onFocus={e => e.target.style.borderColor = 'var(--input-focus-border)'}
+              onBlur={e => e.target.style.borderColor = 'var(--input-border)'}
             />
           </div>
 
-          {/* Submit */}
           <div className="flex justify-end">
             <motion.button
               type="submit"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-3 px-8 py-3.5 text-sm font-medium tracking-widest uppercase text-white transition-all"
+              className="flex items-center gap-3 px-8 py-3.5 text-sm font-medium tracking-widest uppercase text-white"
               style={{ background: sent ? '#10B981' : 'linear-gradient(135deg, #3B82F6, #1D4ED8)' }}
             >
               {sent ? (
-                <>
-                  <span>✓</span> {t('contact.sent')}
-                </>
+                <><span>✓</span> {t('contact.sent')}</>
               ) : (
-                <>
-                  <FiSend size={14} /> {t('contact.sendMessage')}
-                </>
+                <><FiSend size={14} /> {t('contact.sendMessage')}</>
               )}
             </motion.button>
           </div>
         </motion.form>
 
         {/* Divider */}
-        <div className="my-16 h-px opacity-10" style={{ background: '#3B82F6' }} />
+        <div className="my-16 h-px" style={{ background: 'var(--divider)' }} />
 
         {/* Social Links */}
         <motion.div
@@ -142,7 +176,12 @@ export default function Contact() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="flex flex-col sm:flex-row items-center justify-between gap-6"
         >
-          <p className="text-gray-600 text-xs tracking-widest uppercase">{t('contact.findOnline')}</p>
+          <p
+            className="text-xs tracking-widest uppercase"
+            style={{ color: 'var(--text-muted)' }}
+          >
+            {t('contact.findOnline')}
+          </p>
           <div className="flex items-center gap-5">
             {socials.map(({ icon: Icon, label, href }) => (
               <motion.a
@@ -150,8 +189,9 @@ export default function Contact() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.15, color: '#3B82F6' }}
-                className="text-gray-600 transition-colors duration-200 hover:text-blue-500"
+                whileHover={{ scale: 1.15 }}
+                className="transition-colors duration-200 hover:text-blue-500"
+                style={{ color: 'var(--text-muted)' }}
                 aria-label={label}
               >
                 <Icon size={20} />
