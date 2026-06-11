@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiSend } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiSend, FiPhone } from 'react-icons/fi';
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -20,8 +20,8 @@ export default function Contact() {
   const socials = [
     { icon: FiGithub,   label: 'GitHub',  href: 'https://github.com' },
     { icon: FiLinkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
-    { icon: FiTwitter,  label: 'Twitter',  href: 'https://twitter.com' },
-    { icon: FiMail,     label: 'Email',    href: 'mailto:hello@example.com' },
+    { icon: FiPhone,    label: 'Phone',    href: 'tel:+23672166776' },
+    { icon: FiMail,     label: 'Email',    href: 'mailto:olyndiradjennedora@gmail.com' },
   ];
 
   const inputStyle = {

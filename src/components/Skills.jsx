@@ -5,8 +5,8 @@ import {
   SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap,
   SiFigma, SiVite, SiFramer,
   SiNodedotjs, SiSpringboot, SiSpringsecurity, SiThymeleaf, SiOpenjdk,
-  SiGit, SiIntellijidea, SiAndroidstudio, SiFlutter,
-  SiPostgresql, SiMysql, SiSqlite,
+  SiGit, SiIntellijidea, SiAndroidstudio, SiFlutter, 
+  SiPostgresql, SiMysql, SiSqlite, SiVercel, SiXampp, 
 } from 'react-icons/si';
 
 const categories = [
@@ -46,6 +46,7 @@ const categories = [
       { icon: SiIntellijidea,  label: 'IntelliJ IDEA',  color: '#FE315D' },
       { icon: SiAndroidstudio, label: 'Android Studio', color: '#3DDC84' },
       { icon: SiFlutter,       label: 'Flutter',        color: '#0085BA' },
+      { icon: SiVercel,       label: 'Vercel',        color: '#000000' },
     ],
   },
   {
@@ -55,6 +56,7 @@ const categories = [
       { icon: SiPostgresql, label: 'PostgreSQL', color: '#336791' },
       { icon: SiMysql,      label: 'MySQL',      color: '#00758F' },
       { icon: SiSqlite,     label: 'SQLite',     color: '#003B57' },
+      { icon: SiXampp,      label: 'XAMPP',      color: '#FB9600' },
     ],
   },
 ];
