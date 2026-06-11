@@ -4,6 +4,7 @@ import { FiExternalLink, FiArrowUpRight } from 'react-icons/fi';
 import itimScreenshot from '../assets/itim-screenshot.png';
 import munasphereScreenshot from '../assets/munasphere-screenshot.png';
 import lyndiraScreenshot from '../assets/lyndira-screenshot.png';
+import eliaaraScreenshot from '../assets/eliaara-screenshot.png';
 
 function textOnColor(hex) {
   const r = parseInt(hex.slice(1, 3), 16);
@@ -16,6 +17,7 @@ const screenshots = {
   itim: itimScreenshot,
   munasphere: munasphereScreenshot,
   lyndira: lyndiraScreenshot,
+  eliaara: eliaaraScreenshot,
 };
 
 export default function Projects() {

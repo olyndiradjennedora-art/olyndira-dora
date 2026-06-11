@@ -77,6 +77,17 @@ const resources = {
             screenshotKey: 'lyndira',
             client: { initials: 'LY', name: 'LYNDIRA', role: 'African Fashion Brand' },
           },
+          {
+            title: 'ELIAARA - Personal Clothing Collection',
+            category: 'Showcase Website',
+            description:
+              "A website to showcase the Eliaara collection. This clothing collection combines timeless elegance and modern craftsmanship, featuring unique pieces designed for fashion enthusiasts seeking style and quality.",
+            color: '#8B5CF6',
+            gradient: 'from-violet-50 to-purple-50',
+            liveUrl: 'https://eliaara.vercel.app/',
+            screenshotKey: 'eliaara',
+            client: { initials: 'EL', name: 'ELIAARA', role: 'Personal Clothing Collection' },
+          },
         ],
       },
       faq: {
@@ -206,6 +217,17 @@ const resources = {
             liveUrl: 'https://lyndira.vercel.app/',
             screenshotKey: 'lyndira',
             client: { initials: 'LY', name: 'LYNDIRA', role: 'Marque de Mode Africaine' },
+          },
+          {
+            title: 'ELIAARA - Collection d\'habit personnelle',
+            category: 'Site vitrine',
+            description:
+              "Un site web pour présenter la collection Eliaara. Cette collection de vêtements allie élégance intemporelle et artisanat moderne, mettant en valeur des pièces uniques conçues pour les amateurs de mode à la recherche de style et de qualité.",
+            color: '#8B5CF6',
+            gradient: 'from-violet-50 to-purple-50',
+            liveUrl: 'https://eliaara.vercel.app/',
+            screenshotKey: 'eliaara',
+            client: { initials: 'EL', name: 'ELIAARA', role: 'Collection de Vêtements' },
           },
         ],
       },
