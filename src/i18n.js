@@ -48,7 +48,7 @@ const resources = {
             title: 'Thesis Defense Management (ITIM)',
             category: 'Web Application',
             description:
-              "I built a web application to manage grades and thesis defense deliberations for ITIM (Institut des Technologies de l'Information et de Management).",
+              "I developed a web application to manage thesis defense scores and deliberations for ITIM (Institut des Technologies de l'Information et de Management).",
             color: '#D4AF37',
             gradient: 'from-amber-50 to-yellow-50',
             liveUrl: 'https://itim-website.vercel.app/',
@@ -59,7 +59,7 @@ const resources = {
             title: "MUNAS'PHERE Agency Website",
             category: 'Marketing Website',
             description:
-              "A website created for MUNAS'PHERE (communication and digital marketing agency).",
+              "A website created for MUNAS'PHERE which is a communication and digital marketing agency in the Central African Republic since 2013.",
             color: '#6366F1',
             gradient: 'from-indigo-50 to-purple-50',
             liveUrl: 'https://munaspher.vercel.app/',
@@ -70,7 +70,7 @@ const resources = {
             title: 'LYNDIRA - African Fashion',
             category: 'E-commerce Website',
             description:
-              "Website for the African fashion brand LYNDIRA — founded in 2022 in Bangui, Central African Republic. The brand combines fashion, beauty, and digital services: clothing, handcrafted shoes, accessories, natural cosmetics, and web/mobile development.",
+              "A website for the African fashion brand LYNDIRA — founded in 2026 in Bangui, Central African Republic. The brand combines fashion, beauty, elegance, and traditional values into a range of products: clothing, handcrafted shoes, accessories, and natural cosmetics.",
             color: '#10B981',
             gradient: 'from-emerald-50 to-teal-50',
             liveUrl: 'https://lyndira-fashion.vercel.app/',
@@ -189,7 +189,7 @@ const resources = {
             title: "Application de gestion des notes et des délibérations de soutenance : cas de l'ITIM",
             category: 'Application Web',
             description:
-              "J'ai créé une application web de gestion des notes et des délibérations de soutenance : cas de l'ITIM (Institut des Technologies de l'Information et de Management).",
+              "J'ai développé une application web pour gérer les notes et les délibérations de soutenance de l'ITIM (Institut des Technologies de l'Information et de Management).",
             color: '#D4AF37',
             gradient: 'from-amber-50 to-yellow-50',
             liveUrl: 'https://itim-website.vercel.app/',
@@ -200,18 +200,18 @@ const resources = {
             title: "Site web - MUNAS'PHERE",
             category: 'Site Marketing',
             description:
-              "J'ai créé un site web pour l'agence MUNAS'PHERE (Agence de conseil en Communication et Marketing Digital).",
+              "Un site web créé pour MUNAS'PHERE qui est une agence de communication et marketing digital en République Centrafricaine depuis 2013.",
             color: '#6366F1',
             gradient: 'from-indigo-50 to-purple-50',
             liveUrl: 'https://munaspher.vercel.app/',
             screenshotKey: 'munasphere',
-            client: { initials: 'MP', name: "MUNAS'PHERE", role: 'Agence de Communication & Marketing Digital' },
+            client: { initials: 'MU', name: "MUNAS'PHERE", role: 'Agence de Communication & Marketing Digital' },
           },
           {
             title: 'Site e-commerce - LYNDIRA (African Fashion)',
             category: 'E‑commerce',
             description:
-              "Site web pour la marque africaine LYNDIRA, fondée en 2022 à Bangui (République Centrafricaine). La marque allie mode, beauté et services numériques : vêtements, chaussures artisanales, accessoires, cosmétiques naturels et développement web/mobile.",
+              "Site web pour la marque de mode africaine LYNDIRA — fondée en 2026 à Bangui, République Centrafricaine. La marque combine mode, beauté, élégance et les valeurs traditionnelles dans une gamme de produits : vêtements, chaussures artisanales, accessoires et cosmétiques naturels.",
             color: '#10B981',
             gradient: 'from-emerald-50 to-teal-50',
             liveUrl: 'https://lyndira-fashion.vercel.app/',
